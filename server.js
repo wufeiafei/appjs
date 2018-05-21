@@ -6,6 +6,7 @@ var querystring = require('querystring');
 
 
 function startServer(route, handle) {
+    
     var onRequest = function(request, response) {
         var pathname = url.parse(request.url).pathname;
         console.log('Request received ' + pathname);
